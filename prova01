@@ -1,0 +1,8 @@
+#prova 01 - infinity school (algoritimos e variaveis) 
+
+base = float(input("Qual a base do retangulo que você quer medir?: "))
+altura = float(input("Qual a altura do retangulo que você quer medir?: "))
+
+area = base * altura
+
+print(f"A area do seu retangulo é igual a {area}")
