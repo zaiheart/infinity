@@ -1,0 +1,14 @@
+numero_correto = 7
+tentativas = 0
+limite_tentativas = 3
+
+while tentativas < limite_tentativas:
+    palpite = int(input(f"Tentativa {tentativas + 1} de {limite_tentativas}. Adivinhe o número: "))
+    tentativas += 1
+
+    if palpite == numero_correto:
+        print("Parabéns! Você acertou o número!")
+        break
+else:
+    
+    print("Suas tentativas acabaram.")
