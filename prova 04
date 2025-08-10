@@ -1,0 +1,15 @@
+p_numero = int(input("digite um numero inteiro: "))
+s_numero = int(input("digite outro numero inteiro: "))
+numero_par = 0
+par = False
+for numero in range(p_numero, s_numero + 1):
+    if numero %2 == 0:
+        numero_par += numero
+        par = True
+else:
+    if par == False:
+        print("não há numeros pares no intervalo dos numeros que você digitou.")
+    else:
+        print(f"a soma dos numeros pares do intervalo entre {p_numero} e {s_numero} é: {numero_par}")
+
+print(numero_par)
