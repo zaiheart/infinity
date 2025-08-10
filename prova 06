@@ -1,0 +1,21 @@
+USUARIO_CORRETO = "zaiheart"
+SENHA_CORRETA = "1234"
+tentativas = 3
+
+for tentativa in range(tentativas):
+    print(f"Tentativa {tentativa + 1} de {tentativas}")
+    usuario = input("Digite seu nome de usuário: ")
+    senha = input("Digite sua senha: ")
+
+    if usuario == USUARIO_CORRETO and senha == SENHA_CORRETA:
+        print(f" Bem-vindo(a), {usuario}! Login realizado com sucesso.")
+        break  
+    else:
+        tent_restantes = tentativas - (tentativa + 1)
+        if tent_restantes >= 0:
+            print(f"usuário ou senha incorretos. Tente de novo, você ainda tem {tent_restantes} tentativa(s).")
+        else:
+            print("você não conseguiu fazer login.")
+
+else:
+    print("suas tentativas acabaram.")
