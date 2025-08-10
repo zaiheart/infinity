@@ -1,0 +1,17 @@
+numero_alunos = int(input("digite a quantidade de alunos: "))
+notas = 0
+for i in range(numero_alunos):
+    nome = str(input("digite o nome do aluno: "))
+    nota1 = float(input("digite a primeira nota do aluno: "))
+    nota2 = float(input("digite a segunda nota do aluno: "))
+    nota3 = float(input("digite a terceira nota do aluno: "))
+    media = (nota1 + nota2 + nota3) / 3
+    notas += media
+    print(f"o aluno {nome} com as notas {nota1}, {nota2} e {nota3} teve a media: {media:.2f}")
+    if media >=7:
+        print("foi APROVADO!")
+    else:
+        print("foi reprovado.")
+
+media_geral = notas / numero_alunos
+print(f"e a media GERAL da turma foi: {media_geral:.2f}")
